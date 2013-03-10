@@ -8,6 +8,7 @@ gem 'sinatra-export'
 gem 'rake'
 gem 'rack'
 gem 'sass'
+gem 'i18n'
 
 group :deploy do
   gem 'capistrano'

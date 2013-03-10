@@ -17,6 +17,7 @@ GEM
       capistrano
       mime-types
     highline (1.6.15)
+    i18n (0.6.4)
     jsmin (1.0.1)
     json (1.7.7)
     mime-types (1.21)
@@ -68,6 +69,7 @@ PLATFORMS
 DEPENDENCIES
   capistrano
   capistrano-s3
+  i18n
   rack
   rake
   sass

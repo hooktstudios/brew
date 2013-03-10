@@ -4,10 +4,22 @@ require 'bundler'
 
 Bundler.require
 
+I18n.load_path += Dir[File.join(File.dirname(__FILE__), 'locales', '*.yml').to_s]
+
 class App < Sinatra::Base
   set :root, File.dirname(__FILE__)
   register Sinatra::AdvancedRoutes
   register Sinatra::AssetPack
+  register Sinatra::Reloader if development?
+
+  helpers do
+    def t(*args)
+      I18n.t(*args)
+    end
+    def cache
+      @@cache ||= ActiveSupport::Cache::MemoryStore.new()
+    end
+  end
 
   assets {
     serve '/',     from: 'assets/public'
@@ -30,5 +42,13 @@ class App < Sinatra::Base
 
   get '/' do
     erb :index
+  end
+
+  private
+
+  def set_locale locale
+    I18n.locale = locale
+    I18n.reload! if development?
+    params[:locale] = locale
   end
 end
