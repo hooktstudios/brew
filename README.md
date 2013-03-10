@@ -1,6 +1,6 @@
-# brew
+# brew.HS
 
-Very simple website for brew.
+Very simple website for Hookt Studios contributions to home brewing community.
 
 ## Getting started
 
@@ -12,7 +12,8 @@ Very simple website for brew.
 
 To deploy (if you dare) configure the required s3 crendentials in `config/s3.yml`, then use capistrano.
 
-    cap [dev|www] deploy
+    cap [development|production] deploy
 
-http://dev.brew.com.s3-website-us-east-1.amazonaws.com
-http://www.brew.com.s3-website-us-east-1.amazonaws.com
+[Development](http://dev.brew.monhs.com.s3-website-us-east-1.amazonaws.com)
+
+[Production](http://www.brew.monhs.com.s3-website-us-east-1.amazonaws.com)
