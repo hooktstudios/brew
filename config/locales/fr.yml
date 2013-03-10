@@ -1,4 +1,13 @@
 fr:
   layout:
-    title: "Bière maison chez Hookt Studios"
-    description: "Découvrez notre contributions à la communauté des bières maisons."
+    title: Bière maison chez Hookt Studios
+    description: Découvrez notre contributions à la communauté des bières maisons.
+  upcoming:
+    title: Dans nos chaudières
+    desc: La prochaine brassée de Hookt va être une bock nommée <em>la Bockette.</em>
+  about:
+    title: À propos
+    subtitle: Ceci est un historique des bières <br>brassées par Hookt Studios
+    text: |
+      Nous sommes une jeune entreprise dynamique de Québec composée de professionnels
+      passionnés. Brasser de la bière artisanale est un loisir que nous partageons.

@@ -6,7 +6,7 @@
     <meta name="description" content="<%= t 'layout.description' %>" />
     <meta name="viewport" content="width=device-width">
     <meta property="og:image" content="http://brew.hooktstudios.com/img/logo.png"/>
-    <meta property="og:site_name" content="Brewing at Hookt Studios"/>
+    <meta property="og:site_name" content="<%= t 'layout.title' %>"/>
     <%= css :app, :media => 'screen' %>
     <%= js  :app %>
   </head>
@@ -18,8 +18,8 @@
       <% else %>
         <a href="/en">EN</a>
       <% end %>
-      <h2>Dans nos chaudières</h2>
-      <p>La prochaine brassée de Hookt va être une bock nommée <em>la Bockette.</em></p>
+      <h2><%= t 'upcoming.title' %></h2>
+      <p><%= t 'upcoming.desc' %></p>
     </header>
     <ol class="beers">
       <li>
@@ -28,9 +28,9 @@
     </ol>
 
     <section class="inner">
-      <h2 class="h1-like">À propos</h2>
-      <h3 class="h2-like">Ceci est un historique des bières <br>brassées par Hookt Studios</h3>
-      <p>Nous sommes une jeune entreprise dynamique de Québec composée de professionnels passionnés. Brasser de la bière artisanale est un loisir que nous partageons.</p>
+      <h2 class="h1-like"><%= t 'about.title' %></h2>
+      <h3 class="h2-like"><%= t 'about.subtitle' %></h3>
+      <p><%= t 'about.text' %></p>
     </section>
   <script type="text/javascript">
 
