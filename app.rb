@@ -32,9 +32,6 @@ class App < Sinatra::Base
     css :app, '/css/application.css', [
       '/css/styles.css',
     ]
-
-    js_compression  :jsmin      # Optional
-    css_compression :simple       # Optional
   }
 
   {:fr => '/', :en => '/en'}.each do |locale, path|
