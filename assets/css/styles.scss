@@ -2,6 +2,12 @@
 @import "assets/css/mixins";
 @import "assets/css/reset";
 
+@include font-face(novecento, "/fonts/novecentowide-bold-webfont", bold);
+
+html {
+  font-size: 62.5%;
+}
+
 header {
   position: absolute;
   width: 100%;
