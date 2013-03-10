@@ -1,0 +1,8 @@
+.sass-cache/
+public/js/
+public/img/
+public/fonts/
+public/css/
+public/index.html
+config/s3.yml
+.last_published
