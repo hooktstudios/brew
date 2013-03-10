@@ -1,3 +1,4 @@
+@import "assets/css/bourbon/bourbon";
 @import "assets/css/mixins";
 @import "assets/css/reset";
 
@@ -8,8 +9,8 @@ header {
 
 h1 {
   @include rem(13);
+  @include linear-gradient(#fff, #000);
 
-  background: #000;
   opacity: 0.5;
   color: #fff;
   display: block;
