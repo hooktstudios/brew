@@ -11,25 +11,27 @@
     <%= js  :app %>
   </head>
   <body>
-    <header>
+    <header class="inner">
       <h1>Brew.HS</h1>
       <% if I18n.locale == :en %>
         <a href="/">FR</a>
       <% else %>
         <a href="/en">EN</a>
       <% end %>
+      <h2>Dans nos chaudières</h2>
+      <p>La prochaine brassée de Hookt va être une bock nommée <em>la Bockette.</em></p>
     </header>
-    <div class="beer">
-      <h2>La Ale-P</h2>
-      <%= img 'ale-p.png',
-        alt: 'La Ale P : ça me semble honnête',
-        longdesc: 'Ale P : ça me semble honnête.
-          Cuvée de 14L brassée le 1 mars 2013, bière de type IPA clone de la '
-      %>
-    </div>
-    <div class="beer">
-      <h2>La Bucket</h2>
-    </div>
+    <ol class="beers">
+      <li>
+        <h2>La Ale-P</h2>
+      </li>
+    </ol>
+
+    <section class="inner">
+      <h2 class="h1-like">À propos</h2>
+      <h3 class="h2-like">Ceci est un historique des bières <br>brassées par Hookt Studios</h3>
+      <p>Nous sommes une jeune entreprise dynamique de Québec composée de professionnels passionnés. Brasser de la bière artisanale est un loisir que nous partageons.</p>
+    </section>
   <script type="text/javascript">
 
     var _gaq = _gaq || [];
