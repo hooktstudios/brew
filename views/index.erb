@@ -2,8 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Contributing to Brewing at Hookt Studios</title>
-    <meta name="description" value="Learn more about our team contributions to the Open Brewing community." />
+    <title><%= t 'layout.title' %></title>
+    <meta name="description" value="<%= t 'layout.description' %>" />
     <meta name="viewport" content="width=device-width">
     <meta property="og:image" content="http://brew.hooktstudios.com/img/logo.png"/>
     <meta property="og:site_name" content="Brewing at Hookt Studios"/>
@@ -13,6 +13,11 @@
   <body>
     <header>
       <h1>Brew.HS</h1>
+      <% if I18n.locale == :en %>
+        <a href="/">FR</a>
+      <% else %>
+        <a href="/en">EN</a>
+      <% end %>
     </header>
     <div class="beer">
       <h2>La Ale-P</h2>

@@ -4,7 +4,7 @@ require 'bundler'
 
 Bundler.require
 
-I18n.load_path += Dir[File.join(File.dirname(__FILE__), 'locales', '*.yml').to_s]
+I18n.load_path += Dir[File.join(File.dirname(__FILE__), 'config', 'locales', '*.yml').to_s]
 
 class App < Sinatra::Base
   set :root, File.dirname(__FILE__)
@@ -15,9 +15,6 @@ class App < Sinatra::Base
   helpers do
     def t(*args)
       I18n.t(*args)
-    end
-    def cache
-      @@cache ||= ActiveSupport::Cache::MemoryStore.new()
     end
   end
 
@@ -40,15 +37,11 @@ class App < Sinatra::Base
     css_compression :simple       # Optional
   }
 
-  get '/' do
-    erb :index
-  end
-
-  private
-
-  def set_locale locale
-    I18n.locale = locale
-    I18n.reload! if development?
-    params[:locale] = locale
+  {:fr => '/', :en => '/en'}.each do |locale, path|
+    get path do
+      I18n.locale = locale
+      I18n.reload! if App.development?
+      erb :index
+    end
   end
 end
