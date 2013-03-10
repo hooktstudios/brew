@@ -1,2 +1,21 @@
 @import "assets/css/mixins";
 @import "assets/css/reset";
+
+header {
+  position: absolute;
+  width: 100%;
+}
+
+h1 {
+  @include rem(13);
+
+  background: #000;
+  opacity: 0.5;
+  color: #fff;
+  display: block;
+  padding: 20px;
+}
+
+.beer {
+  padding: 80px;
+}
