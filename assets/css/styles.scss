@@ -69,14 +69,46 @@ em {
   font-weight: bold;
 }
 
+.plain {
+  list-style: none;
+  li { display: inline-block; }
+}
+
 .inner {
   margin: 0 auto;
   max-width: 1100px;
   padding-left: 13%;
+  overflow: hidden;
 }
 
 header, section {
   padding-bottom: 4%;
+}
+
+.meta-nav {
+  @extend .plain;
+  float: right;
+  padding-top: 8px;
+
+  li {
+    border-left: 1px solid rgba(#c2c3af, 0.5);
+    line-height: 1;
+
+    &:first-child { border: 0; }
+  }
+
+  a {
+    @include rem(17);
+    @include transition(color, 0.5s);
+
+    color: rgba(#fff, 0.7);
+    padding: 0 6px;
+    text-decoration: none;
+
+    &:hover {
+      color: #fff;
+    }
+  }
 }
 
 .beers {

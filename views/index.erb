@@ -12,12 +12,18 @@
   </head>
   <body>
     <header class="inner">
+      <nav>
+        <ul class="meta-nav">
+          <li><a href="http://www.hooktstudios.com">hookt</a></li>
+          <li><a href="http://code.hooktstudios.com">code</a></li>
+          <% if I18n.locale == :en %>
+            <li><a href="/">fr</a></li>
+          <% else %>
+            <li><a href="/en">en</a></li>
+          <% end %>
+        </ul>
+      </nav>
       <h1>Brew.HS</h1>
-      <% if I18n.locale == :en %>
-        <a href="/">FR</a>
-      <% else %>
-        <a href="/en">EN</a>
-      <% end %>
       <h2><%= t 'upcoming.title' %></h2>
       <p><%= t 'upcoming.desc' %></p>
     </header>
