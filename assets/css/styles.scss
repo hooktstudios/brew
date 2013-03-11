@@ -6,6 +6,8 @@
 @include font-face(gentium, "/fonts/GenBkBasR");
 @include font-face(gentium, "/fonts/GenBkBasBI", bold, italic);
 
+* { @include box-sizing(border-box); }
+
 html {
   font-size: 62.5%;
 }
@@ -16,7 +18,8 @@ body {
   background: #262626;
   color: #fff;
   font-family: gentium;
-  line-height: 2;
+  line-height: 1.6;
+  padding-bottom: 30px;
 }
 
 h1,
@@ -28,7 +31,8 @@ h1,
   font-weight: bold;
   color: #1f1f1f;
   line-height: 1;
-  margin: -32px 0 70px;
+  margin: -30px 0 6% -20%;
+  padding: 0;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -40,7 +44,24 @@ h2,
   font-family: gentium;
   font-style: italic;
   font-weight: bold;
-  line-height: 1;
+  line-height: 0.9;
+  margin-bottom: 1%;
+  padding-right: 25%;
+  width: 90%;
+}
+
+p {
+  margin-bottom: 1em;
+  padding-right: 25%;
+}
+
+a {
+  color: #fff;
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: none;
+
+  &:hover { color: #c2c3af; }
 }
 
 em {
@@ -50,14 +71,33 @@ em {
 
 .inner {
   margin: 0 auto;
-  width: 1024px;
+  max-width: 1100px;
+  padding-left: 13%;
 }
 
-.beers li {
-  background: url("/img/beers/ale_p.jpg") top center no-repeat;
-  background-size: cover;
-  height: 500px;
-  position: relative;
-  width: 100%;
-  z-index: 1000;
+header, section {
+  padding-bottom: 4%;
+}
+
+.beers {
+  li {
+    background: url("/img/beers/ale_p.jpg") center center no-repeat;
+    background-size: cover;
+    display: block;
+    line-height: 100%;
+    height: 45%;
+    list-style-type: none;
+    position: relative;
+    text-align: right;
+    z-index: 1000;
+  }
+
+  img {
+    display: inline-block;
+    height: auto;
+    margin-right: 10%;
+    max-width: 378px;
+    vertical-align: middle;
+    width: 34%;
+  }
 }
