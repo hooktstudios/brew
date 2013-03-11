@@ -9,5 +9,6 @@ fr:
     title: À propos
     subtitle: Ceci est un historique des bières <br>brassées par Hookt Studios
     text: |
-      Nous sommes une jeune entreprise dynamique de Québec composée de professionnels
-      passionnés. Brasser de la bière artisanale est un loisir que nous partageons.
+      <p>Nous sommes une jeune entreprise dynamique de Québec composée de professionnels
+      passionnés.</p>
+      <p>Brasser de la bière artisanale est un loisir que nous partageons.</p>

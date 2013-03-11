@@ -5,3 +5,11 @@ en:
   upcoming:
     title: In our boilers
     desc: The next brew will be a bock named <em>la Bockette.</em>
+  about:
+    title: About
+    subtitle: |
+      This is a log of beers
+      <br/>brewed by Hookt Studios
+    text: |
+      <p>We are a small and dynamic web & design team in Quebec City.</p>
+      <p>Brewing beer is an hobbie we share.</p>
