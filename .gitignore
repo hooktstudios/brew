@@ -4,5 +4,6 @@ public/img/
 public/fonts/
 public/css/
 public/index.html
+public/en/index.html
 config/s3.yml
 .last_published
