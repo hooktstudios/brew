@@ -20,7 +20,7 @@ Links :
 
 ## Credits
 
-![hooktstudios](http://hooktstudios.com/logo.png)
+![hooktstudios](http://www.hooktstudios.com/logo.png)
 
 Made for fun by [hooktstudios](http://github.com/hooktstudios).
 
